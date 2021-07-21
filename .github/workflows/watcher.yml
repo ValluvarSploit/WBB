@@ -38,7 +38,3 @@ jobs:
          git add domains-local.txt wildcards-local.txt
          git commit -m "Update Local Files"
          git push "https://ValluvarSploit:${{ secrets.TOKEN }}@github.com/ValluvarSploit/Watch-BBP-Public.git" HEAD:main --follow-tags
-      - name: Job Stauts Slack Notification
-        if: always()
-        run: |
-          curl -X POST -H 'Content-type: application/json' --data '{"text":"The job ${{ github.job}} in workflow ${{ github.workflow }} has _*`${{ job.status }}`*_"}' "$S_WEBHOOK"
