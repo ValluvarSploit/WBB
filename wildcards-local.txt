@@ -15,8 +15,6 @@
 *.rtcdn.caffeine.tv
 *.canva-apps.cn
 *.canva-apps.com
-*.canva.cn
-*.canva.com
 *.cengage.com
 *.ikarem.io
 *.meraki.com
