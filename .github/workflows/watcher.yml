@@ -1,8 +1,7 @@
 name: Watch BB Public Program
 on:
-  workflow_dispatch:
-#  schedule:
-#  - cron: "0 * * * *"
+  schedule:
+  - cron: "0 * * * *"
 jobs:
   bbp-watcher:
     runs-on: ubuntu-latest
